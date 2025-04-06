@@ -25,7 +25,7 @@
 	}
 },
 "idle_inhibitor": {
-    "format": "{icon}",
+    "format": "{icon} ",
     "format-icons": {
         "activated": "",
         "deactivated": ""
@@ -63,9 +63,13 @@
     "format": "{icon} {percent}%",
     "format-icons": ["", "", "", "", "", "", "", "", ""]
 },
+"battery": {
+    "format": "{icon}  {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+},
 "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-wifi": "{essid}    {signalStrength}%",
     "format-ethernet": " {ifname}",
     "tooltip-format": " {ifname} via {gwaddr}",
     "format-linked": " {ifname} (No IP)",
@@ -75,7 +79,7 @@
 },
 "pulseaudio": {
     "scroll-step": 5, // %, can be a float
-    "format": "{icon} {volume}% {format_source}",
+    "format": "{icon}  {volume}% {format_source}",
     "format-bluetooth": " {icon} {volume}% {format_source}",
     "format-bluetooth-muted": "  {icon} {format_source}",
     "format-muted": "  {format_source}",
